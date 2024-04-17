@@ -458,7 +458,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
             confidence = conf;
             label = result.getTitle();
-            if (result.getId().equals("0")) {
+            if ("0".equals(result.getId())) {
               color = Color.GREEN;
             }
             else {
